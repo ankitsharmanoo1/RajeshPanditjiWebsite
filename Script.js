@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove('menu-open');
   });
 
-  document.querySelectorAll(".mobile-menu a").forEach(link => {
-    link.addEventListener("click", () => {
+  document.querySelectorAll(".mobile-menu a").forEac(link => {
+    link.addEventListener("click", () => {     
       mobileMenu.classList.remove("open");
       document.body.classList.remove('menu-open');
     });
@@ -35,13 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-// <!-- GSAP CDN -->
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-// <script>
-    // Header Animation
     gsap.from("header", {
         y: -50,
         opacity: 0,
